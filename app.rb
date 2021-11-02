@@ -9,6 +9,8 @@ get '/secret' do
   'This is a very secret page'
 end
 
-get '/hidden' do
-  'This is a very hidden page'
+get '/cat' do
+  "<div>
+    <img src='http://placekitten.com/500/500'>
+   </div>"
 end
