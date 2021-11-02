@@ -9,7 +9,6 @@ get '/secret' do
   "This page is secret"
 end
 
-
 get '/cat' do
   @name = ["Amigo", "Misty", "Almond"].sample
   erb :index
