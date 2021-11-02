@@ -14,8 +14,12 @@ get '/cat' do
   erb :index
 end
 
-get '/named-cat' do
-  @name = params[:name]
+get '/name-form' do
+  erb :name_form
+end
+
+post '/named-cat' do
   p params
+  @name = params[:name]
   erb :index
 end
